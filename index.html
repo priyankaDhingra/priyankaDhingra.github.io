@@ -18,15 +18,16 @@
         h1 { margin: 0 0 16px 0; padding: 0 0 16px 0; font-size: 42px; font-weight: bold; letter-spacing: -2px; border-bottom: 1px solid #999; }
         h2 { font-size: 20px; margin: 0 0 6px 0; position: relative; }
         h2 span { position: absolute; bottom: 0; right: 0; font-style: italic; font-family: Georgia, Serif; font-size: 16px; color: #999; font-weight: normal; }
+        
         p { margin: 0 0 16px 0; }
         a { color: #999; text-decoration: none; border-bottom: 1px dotted #999; }
         a:hover { border-bottom-style: solid; color: black; }
         ul { margin: 0 0 32px 17px; }
         #objective { width: 500px; float: left; }
         #objective p { font-family: Georgia, Serif; font-style: italic; color: #666; }
-        dt { font-style: italic; font-weight: bold; font-size: 18px; text-align: right; padding: 0 26px 0 0; width: 150px; float: left; height: 100px; border-right: 1px solid #999;  }
-        dd { width: 600px; float: right; }
-        dd.clear { float: none; margin: 0; height: 15px; }
+        dt { font-style: italic; font-weight: bold; font-size: 18px; text-align: right;  width: 150px; float: left; height: 100px;  }
+        dd { width: 600px; float: right; padding: 0 0 0 26px; border-left: 1px solid #999; }
+        dd.clear { float: none; margin: 0; height: 15px; border:none}
      </style>
 </head>
 
@@ -40,20 +41,24 @@
         
             <!-- Microformats! -->
         
-            <h1 class="fn">Priyanka Dhingra</h1>
+            <h1 class="fn">Priyanka Dhingra  <span>
+              <a href="https://www.linkedin.com/in/priyankadhingra">
+          <img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_viewmy_160x33.png" width="160" height="33" border="0" alt="View Priyanka Dhingra's profile on LinkedIn">
+        
+    </a></span></h1>
         
             <p>
                 Cell: <span class="tel">848-391-8601</span><br />
                 Email: <a class="email" href="mailto:priyanka.dhingra@rutgers.edu">priyanka.dhingra@rutgers.edu</a>
+              
+     
             </p>
         </div>
                 
         <div id="objective">
             <p>
-                I am an outgoing and energetic (ask anybody) young professional, seeking a 
-                career that fits my professional skills, personality, and murderous tendencies. 
-                My squid-like head is a masterful problem solver and inspires fear in who gaze upon it. 
-                I can bring world domination to your organization. 
+                     I am a masterful problem solver and an outgoing, energetic young professional, seeking full-time software developer opportunities. 
+           
             </p>
         </div>
         
@@ -74,13 +79,25 @@
             
             <dd class="clear"></dd>
             
-            <dt>Skills</dt>
+            <dt>Technical Skills</dt>
             <dd>
-                <h2>Office skills</h2>
-                <p>Office and records management, database administration, event organization, customer support, travel coordination</p>
+                 <p><strong>Languages : </strong>C, C++, Java, J2EE, JS, SQL<br /></p>
+               
                 
-                <h2>Computer skills</h2>
-                <p>Microsoft productivity software (Word, Excel, etc), Adobe Creative Suite, Windows</p>
+                 <p><strong>OS : </strong>Linux, Windows, iOS<br /></p>
+                
+                
+                 <p><strong>Web Technologies : </strong>HTML, J2EE, XML, JSON, CSS<br /></p>
+               
+                
+                 <p><strong>Frameworks : </strong>jQuery, YUI, AUI, AJAX, Hibernate, MATLAB<br /></p>
+              
+                 <p><strong>CMS : </strong>Liferay<br /></p>
+            
+                
+                 <p><strong>BPMN : </strong>Camunda<br /></p>
+              
+                
             </dd>
             
             <dd class="clear"></dd>
@@ -89,40 +106,79 @@
             <dt>Projects</dt>
             <dd>
 				<h2>Optical Character Recognition System<span> Spring 2015</span></h2>
-			 	<i>MATLAB</i>
+			 <p>	<i>MATLAB</i>
                 
                 <ul>
                     <li>Recognizing text in images with over 95% accuracy, which can be used in many computer vision
 applications such as image search, document analysis and robot navigation.</li>
                     
                 </ul>
-            </dd> 
-            <dd>
-				<h2>Image synthesis and Inpaint System<span> Jun 2015 - till now</span></h2>
-			 	<i>MATLAB</i>
+</p>				<h2>Image synthesis and Inpaint System<span> Spring 2015</span></h2>
+			<p> 	<i>MATLAB</i>
                 
                 <ul>
                     <li>Synthesized image and Image in-painting using Efros and Leung’s algorithm of texture synthesis
 where texture was grown using non-parametric sampling by enforce statistics locally one pixel at a time. Obtained 98% accuracy.</li>
                     
                 </ul>
-            </dd> 
+            </p>
+				<h2>xv6 Operating System enhancements<span> Spring 2015</span></h2>
+			 	<p><i>C, X86 Assembly</i>
+                
+                <ul>
+                    <li>Implemented several enhancements to xv6, a simple Unix OS, such as Signals,
+traps/exceptions, semaphores, kernel-level threads, memory protection, copy-on-write and demand memory allocation.</li>
+                    
+                </ul>
+           </p>
+				<h2>Developing Compiler & Interpreter for C-like language<span> Fall 2014</span></h2>
+			 <p>	<i>OCAML</i>
+                
+                <ul>
+                    <li>Designed and built compiler, interpreter, lexer and parser, on top of simple x86 architecture.</li>
+                    
+                </ul>
+           </p>
+				<h2>Prevent Plaintext Recovery Attacks Against DTLS<span> Fall 2014</span></h2>
+			
+                
+           <p>     <ul>
+                    <li>Timing attacks exist and serve as the basis for padding oracle attacks. Introducing delay strategies to prevent plaintext.</li>
+                    
+                </ul>
+            </p>
+				<h2>Chip multiprocessor performance evaluation<span> Fall 2014</span></h2>
+			 <p>	<i>OpenMP</i>
+                
+                <ul>
+                    <li>Measured time to execute NU-MineBench benchmarks in parallel threads.</li>
+                    
+                </ul>
+            </p>
+				<h2>Image Processing and Steganography<span> Spring 2011</span></h2>
+			 <p>	<i>MATLAB</i>
+                
+                <ul>
+                    <li>Developed code for noise, blur and contrast. Encrypted/Decrypted text written on image.</li>
+                    
+                </ul>
+                </p>
+            </dd>
             
              <dd class="clear"></dd>
             <dt>Experience</dt>
             <dd>
 				<h2>Ericsson, Piscataway, NJ<span> Jun 2015 - till now</span></h2>
-			 	<i>Software Developer Cloud Manager Intern</i>
+			 	<p><i>Software Developer Cloud Manager Intern</i>
                 
                 <ul>
                     <li>Developed process flow on open source Camunda for Ericsson Cloud Manager.</li>
                     <li>Migrated Jclouds API to Openstack4j for existing test cases.</li>
                     
                 </ul>
-            </dd>  
-            <dd>   
+           </p>  
                 <h2>Symstream Technologies Pvt Ltd, India<span> Nov 2012 – Jul 2014</span></h2>
-			 	<i>Senior Software Engineer</i>
+			 <p>	<i>Senior Software Engineer</i>
                 <ul>
                     <li>Developed modules for a one-stop banking application, a framework that sits between merchant and bank.</li>
                     <li>Designed and developed portal for the ATM to service provider/customer.</li>
@@ -131,16 +187,16 @@ where texture was grown using non-parametric sampling by enforce statistics loca
                     <li>Lead & mentored interns and fresh graduates in software development on Liferay and Android SDK.</li>
                     <li>Awarded Best employee of the quarter in first quarter of 2014.</li>
                 </ul> 
-            </dd>
-            <dd>
+           </p>
                 <h2>Cignex Datamatics Pvt Ltd, India<span> Dec 2011 - Oct 2012</span></h2>
-			 	<i>Trainee Consultant</i>
+			 <p>	<i>Trainee Consultant</i>
                 <ul>
                     <li>Setup and worked on code quality tool SONAR and achieved 95% rule compliance for PMD, Checkstyle and Findbug.</li>
                     <li>Owner of the project, handling change requests, working on front end and bug fixing.</li>
                     <li>Completed projects migration for different versions of Liferay 5.1 to 6.1.1.</li>
                		<li>Achieved zero UAT defects on one of the project.</li>          
                 </ul> 
+            </p>
             </dd>
             
             <dd class="clear"></dd>
@@ -148,10 +204,10 @@ where texture was grown using non-parametric sampling by enforce statistics loca
             <dt>Co-curricular Activities </dt>
             <dd>
             <ul>
-            <li>Student web manager for Math Finance Department. at Rutgers University.</li>
+            <li>Student web manager for Math Finance Department at Rutgers University.</li>
              <li>Web Administrator for Graduate Student Association at Rutgers University.</li>
               <li>Grader for DBMS and Computer Graphics at Rutgers University.</li>
-              <li>Contribute to Open Source forum of Liferay and Write technical blogs http://michi-path.blogspot.com.</li>
+              <li>Contribute to Open Source forum of Liferay and <a href="http://michi-path.blogspot.com">write technical blogs </a>.</li>
              <li>Participate in Hackathons.</li>
              <li>Headed team-building activities and hosted tournaments once a month in office.</li>
               <li>Interviewed candidates for JAVA and Android positions in Symstream Technologies Pvt Ltd.</li> 
